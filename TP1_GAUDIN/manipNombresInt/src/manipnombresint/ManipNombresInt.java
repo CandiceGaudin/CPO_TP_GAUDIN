@@ -1,4 +1,4 @@
-/*
+        /*
  * Gaudin
  * TP1 manipNombresInt
  * TDA
@@ -22,6 +22,8 @@ public class ManipNombresInt {
     int somme;
     int produit;
     int difference;
+    int quotient;
+    int reste;
     Scanner sc = new Scanner(System.in);
     System.out.println("\n Entrer un entier :");
     a=sc.nextInt();
@@ -31,7 +33,10 @@ public class ManipNombresInt {
     somme=a+b;
     produit=a*b;
     difference=a-b;
+    quotient=a/b;
+    reste=a%b;
     System.out.println("\n Voici la somme: " + somme + ", la difference: " + difference + " et le produit: " + produit + " de a et b.");
+    System.out.println("\n Voici le quotient: " +quotient + " et le reste de la division: " + reste + " de a par b.");
     }
     
 }

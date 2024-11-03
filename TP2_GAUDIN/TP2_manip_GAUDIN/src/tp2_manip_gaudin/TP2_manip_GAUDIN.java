@@ -15,7 +15,7 @@ public class TP2_manip_GAUDIN {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Tartiflette_1 assiette1 = new Tartiflette(500); 
+        Tartiflette assiette1 = new Tartiflette(500); 
         Tartiflette assiette2 = new Tartiflette(600); 
         Tartiflette assiette3=assiette2;
         //(4) En réalité les assiette2 et assiette3 référencent la meme tartiflette.

@@ -9,7 +9,7 @@ package tp2_manip_gaudin;
  * @author kango
  */
 public class Tartiflette {
-     int nbCalories; 
+    int nbCalories; 
     public Tartiflette(int Calories) {
         nbCalories=Calories;
     }

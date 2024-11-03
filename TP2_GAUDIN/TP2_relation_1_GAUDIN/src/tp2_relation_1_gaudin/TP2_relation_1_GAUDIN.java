@@ -40,5 +40,5 @@ public class TP2_relation_1_GAUDIN {
         uneMicra.proprietaire = reno;
         System.out.println("la deuxieme voiture de Reno est " +reno.liste_voitures[1] );
         
-    
+    }   
 }

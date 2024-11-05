@@ -51,7 +51,7 @@ public class Convertisseur {
     public double FarenheitVersKelvin (double tFarenheit) {
         nbConversions++;
         double tKelvin;
-        tKelvin =(tFarenheit - 32) * (5/9) + 273.15;
+        tKelvin =(tFarenheit - 32) / 1.8 + 273.15;
         return tKelvin;
     
 }

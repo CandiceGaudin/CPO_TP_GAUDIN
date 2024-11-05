@@ -22,7 +22,7 @@ public class TP2_relation_1_GAUDIN {
         Personne bob = new Personne("Bobby", "Sixkiller");
         Personne reno = new Personne("Reno", "Raines");
         System.out.println("liste des voitures disponibles "+ uneClio +"\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra); //affichage de toutes les voitures
-        bob.liste_voitures[0] = uneClio ;
+        /*bob.liste_voitures[0] = uneClio ;
         bob.nbVoiture = 1 ;
         uneClio.proprietaire = bob ;
         System.out.println("la premiere voiture de Bob est " +bob.liste_voitures[0] ) ;
@@ -39,6 +39,15 @@ public class TP2_relation_1_GAUDIN {
         reno.nbVoiture = 2;
         uneMicra.proprietaire = reno;
         System.out.println("la deuxieme voiture de Reno est " +reno.liste_voitures[1] );
-        
+        */
+        // Question 10)
+        bob.ajouter_une_voiture(uneClio);
+        System.out.println("la premiere voiture de Bob est " +bob.liste_voitures[0] ) ;
+        bob.ajouter_une_voiture(une2008);
+        System.out.println("la deuxieme voiture de Bob est " +bob.liste_voitures[1] ) ;
+        reno.ajouter_une_voiture(uneAutreClio);
+        System.out.println("la premiere voiture de Reno est " +reno.liste_voitures[0] ) ;
+        reno.ajouter_une_voiture(uneMicra);
+        System.out.println("la deuxieme voiture de Reno est " +reno.liste_voitures[1] ) ;
     }   
 }

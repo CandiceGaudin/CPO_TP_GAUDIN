@@ -8,7 +8,7 @@ package tp3_heroic_fantasy_gaudin;
  *
  * @author kango
  */
-public class Arme {
+public abstract class Arme {
     private String nom;
     private int niveau_attaque;
 
@@ -30,6 +30,19 @@ public class Arme {
     }
 
     public void setNiveau_attaque(int niveau_attaque) {
+        if (niveau_attaque < 0) {
+            niveau_attaque = 0;
+        }
+        if (niveau_attaque > 100) {
+            niveau_attaque = 100;
+        }
+        this.niveau_attaque = niveau_attaque;
+        
+        
+    }
+
+    public Arme(String nom, int niveau_attaque) {
+        this.nom = nom;
         this.niveau_attaque = niveau_attaque;
     }
     

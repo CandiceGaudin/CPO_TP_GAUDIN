@@ -4,6 +4,7 @@
  * relation 1
  */
 package tp3_heroic_fantasy_gaudin;
+import java.util.ArrayList;
 
 /**
  *
@@ -15,7 +16,19 @@ public class TP3_Heroic_Fantasy_GAUDIN {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Epee Excalibur = new Epee (7, "Excalibur", 5);
+        Epee Durandal = new Epee (4,"Durandal", 7);
+        Baton Chene = new Baton (4, "Chene", 5);
+        Baton Charme = new Baton (5, "Charme", 6); 
+        
+        ArrayList<Arme> Equipement = new ArrayList<Arme>();
+        Equipement.add(Excalibur);
+        Equipement.add(Durandal);
+        Equipement.add(Chene);
+        Equipement.add(Charme);
+        
+        int taille = Equipement.size();
+
     }
     
 }

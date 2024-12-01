@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp3_heroic_fantasy_gaudin;
+package Armes;
+
+import Armes.Arme;
 
 /**
  *
@@ -20,7 +22,7 @@ public class Epee extends Arme {
             finesse = 0;
         }
         if (finesse >= 100) {
-            finesse = 99;
+            finesse = 100;
         }
         this.finesse = finesse;
     }
@@ -30,7 +32,10 @@ public class Epee extends Arme {
         this.finesse = finesse;
     }
 
-     
+     @Override
+    public String toString() {
+        return "Epee{" + "L'indice de finesse de l'arme est =" + finesse + '}';
+    }
 
     
 

@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp3_heroic_fantasy_gaudin;
+package Armes;
+
+import Armes.Arme;
 
 /**
  *
@@ -28,9 +30,14 @@ public class Baton extends Arme {
     public Baton(int age, String nom, int niveau_attaque) {
         super(nom, niveau_attaque);
         this.age = age;
+        
+        
     }
 
-    
+    @Override
+    public String toString() {
+        return "Baton{" + "age=" + age + '}';
+    }
     
     
 }
